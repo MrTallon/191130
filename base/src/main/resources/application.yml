@@ -1,0 +1,16 @@
+
+server:
+  port: 8085
+
+spring:
+  profiles:
+    active: prod
+  application:
+    name: base
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
