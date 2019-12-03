@@ -4,11 +4,12 @@
 - [X] nexus
 - [X] 入库操作
 - [ ] spring-doc
-- [ ] redis 缓存
+- [ ] redis实现数据库二级缓存
 - [X] 定时任务
 - [ ] 热部署
 - [X] Enjoy
 - [ ] redis 实现统计页面点击量（get请求刷数据）
+- [ ] 将数据库由 druid 切换到 西咖喱
 
 ## 踩坑
 在启动服务时总是报错：注入sqlFactory失败，mp和代码生成器的版本不一致所导致。
@@ -30,6 +31,8 @@
 ```
 暂时为研究明白它的线程池如何使用
 
+当只是使用[基础的定时任务](https://github.com/MrTallon/191130/blob/master/base/src/main/java/com/base/utils/QuartzUtil.java)功能时，不需要添加依赖依赖
+日后仔细研究quartz的功能
 
 [Enjoy 模板引擎](http://www.jfinal.com/share/457)
 [Enjoy 官方文档](https://www.jfinal.com/doc/6-10)
@@ -43,4 +46,12 @@
 学习使用一下 spring-doc
 
 [整理](https://blog.csdn.net/vhfdff/article/details/89048334)
+
+
+验证 mybatisPlus 一级缓存，二级缓存
+
+redis 缓存速度
+
+redis 持久化和缺陷
+
 
