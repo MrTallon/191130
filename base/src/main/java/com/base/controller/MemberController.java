@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /**
  * <p>
@@ -31,6 +32,10 @@ public class MemberController {
     public String test(HttpServletRequest request, HttpServletResponse response, Model model) {
         Member member = memberService.getById(1);
         model.addAttribute("member", member);
+
+        List<Member> list = memberService.list();
+        model.addAttribute("list", list);
+
         return "test";
     }
 }

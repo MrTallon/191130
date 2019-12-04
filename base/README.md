@@ -3,7 +3,7 @@
 提供一些基础功能
 - [X] nexus
 - [X] 入库操作
-- [X] <u>spring-doc</u>
+- [X] ~~spring-doc~~swagger2
 - [ ] redis实现数据库二级缓存
 - [X] 定时任务
 - [ ] 热部署

@@ -42,9 +42,8 @@ public class EnjoyConfig {
 //        engine.addSharedFunction("/common/_paginate.html");
 
         // 更多配置与前面章节完全一样
-        // engine.addDirective(...)
-        // engine.addSharedMethod(...);
-
+//         engine.addDirective(...)
+//         engine.addSharedMethod(...);
         return jfr;
     }
 }

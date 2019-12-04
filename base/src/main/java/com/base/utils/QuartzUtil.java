@@ -12,10 +12,11 @@ import java.util.Date;
  * @author yangbo
  * @version v1.0.0
  * @date 2019-12-02 23:47
+ * cron: http://qqe2.com/cron
  */
 @Component
 public class QuartzUtil {
-    @Scheduled(cron = "0/20 * * * * ? ")
+    @Scheduled(cron = "* 0/2 * * * ? ")
     public void printCurrentTime() {
         System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
     }
