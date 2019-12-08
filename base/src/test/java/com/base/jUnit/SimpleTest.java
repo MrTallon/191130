@@ -1,10 +1,13 @@
 package com.base.jUnit;
 
 import com.test;
+import lombok.NonNull;
+import lombok.val;
 import org.junit.jupiter.api.*;
 
 import java.security.InvalidParameterException;
 import java.time.Duration;
+import java.util.HashSet;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -61,5 +64,12 @@ class SimpleTest {
                     return i;
                 });
         assertEquals(101, result);
+    }
+
+    @Test
+    void lombok(@NonNull String a) {
+        val sets = new HashSet<String>();
+        sets.add("1");
+        System.out.println(sets);
     }
 }

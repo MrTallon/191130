@@ -28,15 +28,19 @@ public class MemberController {
     @Autowired
     private MemberService memberService;
 
-    @RequestMapping(value = "test", method = RequestMethod.GET)
-    public String test(HttpServletRequest request, HttpServletResponse response, Model model) {
+    @RequestMapping(value = "one", method = RequestMethod.GET)
+    public String one(HttpServletRequest request, HttpServletResponse response, Model model) {
         Member member = memberService.getById(1);
         model.addAttribute("member", member);
+        return "test";
+    }
+
+    @RequestMapping(value = "list", method = RequestMethod.GET)
+    public String list(HttpServletRequest request, HttpServletResponse response, Model model) {
 
         List<Member> list = memberService.list();
         model.addAttribute("list", list);
-
-        return "test";
+        return "list";
     }
 }
 

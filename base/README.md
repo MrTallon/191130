@@ -3,13 +3,13 @@
 提供一些基础功能
 - [X] nexus
 - [X] 入库操作
-- [X] ~~spring-doc~~swagger2
-- [ ] redis实现数据库二级缓存
+- [X] ~~spring-doc~~swagger2 -- ip:port/swagger-ui.html
 - [X] 定时任务
 - [ ] 热部署
 - [X] Enjoy
+- [ ] redis实现数据库二级缓存
 - [ ] redis 实现统计页面点击量（get请求刷数据）
-- [X] 将数据库由 druid 切换到 西咖喱
+- [X] 将数据库由 druid 切换到 HikariCP
 
 ## 踩坑
 在启动服务时总是报错：注入sqlFactory失败，mp和代码生成器的版本不一致所导致。
