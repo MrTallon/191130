@@ -16,7 +16,7 @@ import java.util.Date;
  */
 @Component
 public class QuartzUtil {
-    @Scheduled(cron = "* 0/2 * * * ? ")
+    @Scheduled(cron = "* * 1,13 * * ? ")
     public void printCurrentTime() {
         System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
     }
