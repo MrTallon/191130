@@ -1,5 +1,6 @@
 package com.base.jUnit;
 
+import com.base.beans.Member;
 import com.test;
 import lombok.NonNull;
 import lombok.val;
@@ -68,8 +69,15 @@ class SimpleTest {
 
     @Test
     void lombok(@NonNull String a) {
-        val sets = new HashSet<String>();
+        val sets = new HashSet<>();
         sets.add("1");
+        sets.add(1);
+        sets.add(new Member());
         System.out.println(sets);
+    }
+
+    @Test
+    void tt() {
+        System.out.println(1234.00);
     }
 }

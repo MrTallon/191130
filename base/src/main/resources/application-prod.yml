@@ -51,3 +51,6 @@ mybatis-plus:
 logging:
   level:
     com.base: debug
+server:
+  tomcat:
+    max-threads: 10
