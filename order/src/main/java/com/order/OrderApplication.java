@@ -2,7 +2,11 @@ package com.order;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
 @SpringBootApplication
 public class OrderApplication {
 
@@ -10,4 +14,8 @@ public class OrderApplication {
         SpringApplication.run(OrderApplication.class, args);
     }
 
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String get(String key) {
+        return "Hello World";
+    }
 }
